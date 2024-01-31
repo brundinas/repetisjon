@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <input type="text" id="firstName" placeholder="Fornavn" required>
+        <input type="text" id="lastName" placeholder="Etternavn" required>
+        <input type="text" id="address" placeholder="Adresse" required>
+        <input type="number" id="postalCode" placeholder="Postnummer" required>
+        <input type="text" id="city" placeholder="Poststed" required>
+        <input type="tel" id="phone" placeholder="Telefon" required>
+        <input type="password" id="password" placeholder="Passord" required>
+        <input type="number" id="birthYear" placeholder="Fødselsår" required min="1900" max="2024">
+        <button type="submit">Registrer</button>
+    </form>
+
+    <h2>Registrerte Deltagere</h2>
+    <div id ="participantsListDiv">
+        <ol id="participantsList"></ol>
+    </div>
+    
+    <script src="skjema.js"></script>
+</body>
+</html>
+
